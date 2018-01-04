@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>iOS Clock App for iPad</title>
+	<meta name="description" content="A simple, minimalist clock for iOS. No ads, no bullshit, just the time."
+	<meta name="viewport" content="user-scalable=no, width=device-width" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<link rel="apple-touch-startup-image" href="./startup.png" />
+	<link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+	<link rel="stylesheet" href="dist/style.css?v=0.0.5">
+</head>
+<body ontouchmove="blockMove( event );" onunload="">
+<div class="viewport">
+	<div class="centered">
+		<h1 id="clock"></h1>
+		<div id="weather">
+			<p class="date"><span data-weather="formattedDate"></span></p>
+			<p class="temperature"><span data-weather="temperature"></span><sup>&deg;</sup></p>
+			<p class="short-description"><span data-weather="shortForecast"></span></p>
+		</div>
+	</div>
+</div>
+<div class="loading"></div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="dist/main.min.js?v=0.0.5"></script>
+</body>
+</html>
