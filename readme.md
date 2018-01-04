@@ -2,9 +2,13 @@
 
 This simple clock app provides a local weather forecast for the next night or day, and is a great example of a progressive web app. It will appear as a native app in iOS when loaded at https://www.kevinleary.net/clock/, and can be saved as a shortcut with a custom icon.
 
+## Get Started
+
+This project uses `npm` for package management. To get started clone this repo to your system and then run `npm install` to install all dependencies.
+
 ## Build
 
-The project's minimal build is handled by Gulp and will perform the following tasks:
+A minimal build is handled by Gulp and will perform the following tasks:
 
 * Compile a Nunjucks template (`index.njk`) to HTML (`index.html`), auto-versioning CSS and JS files in the process
 * Concatenate and compress JS, respecting `=include` rules from `gulp-include`
