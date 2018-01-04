@@ -2,9 +2,9 @@
  * iOS Clock App
  */
 
-/**
- * Javascript Clock
- */
+//=include ../../node_modules/jquery/dist/jquery.js
+
+// Current time friendly format
 function now() {
 	var time = new Date()
 	var hr = time.getHours()
@@ -61,7 +61,10 @@ function lookupWeather() {
 			var today = new Date();
 			var offset = ( hr > 5 ) ? 0 : 1;
 			var weather = resp.properties.periods[ offset ];
-			weather.formattedDate = today.getMonth() + '/' + today.getDate();
+			var month = today.getMonth() + 1;
+			var day = today.getDate();
+
+			weather.formattedDate = month + '/' + day;
 
 			$( '[data-weather]' ).each( function() {
 				var prop = $( this ).data( 'weather' );
